@@ -17,7 +17,8 @@ return Application::configure(basePath: dirname(__DIR__))
         ]);
 
         $middleware->validateCsrfTokens(except: [
-            '/logout'
+            '/logout',
+            '/realtor/listing/*'
         ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {

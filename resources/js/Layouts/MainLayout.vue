@@ -9,8 +9,8 @@
                     <Link href="/">VILT</Link>
                 </div>
                 <div v-if="user" class="flex items-center gap-4">
-                    <div class="text-sm text-gray-500">{{ user.name }}</div>
-                    <Link :href="route('listing.create')"
+                    <Link :href="route('realtor.listing.index')" class="text-sm text-gray-500">{{ user.name }}</Link>
+                    <Link :href="route('realtor.listing.create')"
                         class="bg-indigo-600 hover:bg-indigo-500 text-white font-medium p-2 rounded-md">+ New Listing
                     </Link>
                     <Link :href="route('logout')" method="delete" as="button">Logout</Link>
